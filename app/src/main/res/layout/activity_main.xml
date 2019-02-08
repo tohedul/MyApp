@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="302dp"
+        android:layout_height="127dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCamera"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="147dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Camera"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textViewAddress"
+        android:layout_marginTop="221dp"
+        android:text="Name:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewName"
+        android:layout_alignEnd="@+id/imageView"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_marginBottom="228dp"
+        android:text="Email:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewEmail"
+        android:layout_alignStart="@+id/editTextName"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_centerVertical="true"
+        android:text="Phone:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewPhone"
+        android:layout_alignStart="@+id/editTextName"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="169dp"
+        android:layout_toStartOf="@+id/btnCamera"
+        android:text="Address:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignTop="@+id/textViewAddress"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewName"
+        android:layout_marginBottom="88dp"
+        android:text="Gender:"
+        android:textSize="24sp" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextName"
+        android:layout_alignTop="@+id/textViewGender"
+        android:layout_marginStart="1dp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="serif"
+        android:text="Register"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnAllUsers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_green_dark"
+        android:text="VIEW_Users"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
